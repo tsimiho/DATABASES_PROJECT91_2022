@@ -1,0 +1,10 @@
+Organisation: 30
+Program: 30
+Executive: 30
+Company: 10
+Uni: 10
+Research Center: 10
+Researcher: 100
+Evaluation: 30  
+Project: 50
+Scientific Field: 20

@@ -1,0 +1,18 @@
+
+      {% if result[0] %}
+<h1>Ερευνητές που εργάζονται στο Έργο:</h1>
+<h1>{{result[0][1]}}</h1>
+
+<table border = 1>
+    {% for user in result %}
+    <tr>
+      <td> {{user[0]}} </td>
+      <!-- <td> {{user[1]}} </td>
+      <td> {{user[2]}} </td> -->
+    </tr>
+    {% endfor %}
+  </table>
+  {% else %}
+<h1>Στο επιλεγμένο έργο δεν εργάζονται ερευνητές αυτή τη στιγμή</h1>
+{% endif %}
+</body>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="​Καλως Ορίσατε!">
+    <meta name="description" content="">
+    <title>Home</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="Home.css" media="screen">
+<link rel="stylesheet" href="css_final.css">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 4.12.5, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "images/ELIDEK_Logo_featured.png"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Home">
+    <meta property="og:type" content="website">
+  </head>
+  
+    <form action="" method = "POST">
+        <div class="form-group row">
+            <label for="id">ID</label>
+            <input type="text" class="form-control" name="id" id="id">
+          </div>
+      <label for="project_id">id Έργου</label>
+      <input type="text" class="form-control" name="project_id" id="project_id">
+    </div>
+    
+    <div class="form-group row">
+        <label for="title">Τίτλος Παραδοτέου</label>
+        <input type="text" class="form-control" name="title" id="title">
+      </div> <div class="form-group row">
+        <label for="summary">Περίληψη</label>
+        <input type="text" class="form-control" name="summary" id="summary">
+      </div>
+    
+    <button type="btnAdd" class="btn btn-primary">ΑΛΛΑΓΗ ΠΑΡΑΔΟΤΕΟΥ</button>
+  </form>
+
+  <div class="outer-wrapper" style="margin: auto;">
+    <div class="table-wrapper">
+      <div class="outer-wrapper" style="margin: auto;">
+        <div class="table-wrapper">
+        <table id="emp-table" >
+            <thead>
+                
+                
+                <th col-index = 1>id Παραδοτέου
+                </th>
+    
+                <th col-index = 1>Τίτλος Παραδοτέου
+                </th>
+    
+                <th col-index = 1>Περίληψη
+                </th>
+                <th col-index = 1>id Έργου
+                </th>
+              
+            </thead>
+            <tbody>
+                {% for user in result %}
+          <tr>
+            
+            <td>{{user[1]}}</td>
+            <td> {{user[2]}}</td>
+            <td> {{user[3]}}</td>
+            <td> {{user[0]}}</td>
+            
+        
+          </tr>
+          {% endfor %}
+                
+    
+            </tbody>
+        </table>
+      
+    </div>
+    </div>
